@@ -6,10 +6,10 @@
     object-fit: cover;
     width:230px;
     height: 230px;
-    box-shadow: 2px 2px 4px gray;
-    
+    box-shadow: 0 3.2px 7.2px rgba(0,0,0,.13),0 0 3.8px rgba(0,0,0,.11)
+
 }
-h1, p{
+h1, p, a{
     font-family:  Arial, Helvetica, sans-serif;
 }
 
@@ -23,4 +23,42 @@ h1 {
     margin-right: auto;
     width: 50%;
     text-align: center;
+    /*letter-spacing: 1px;*/
+    
 }  
+
+#name{
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font: bold;
+} 
+
+#bio{
+  font-size: 20px;
+  color: grey;
+  margin-top: 30px;
+
+}
+
+#contact{
+   margin-top: 2rem
+}
+
+#contact * {
+    margin-left: .2rem;
+    margin-right: .2rem;
+    font-size: 20px;
+    
+}
+a:link { text-decoration: none; }
+
+
+
+
+#email{
+  margin-top: 0px;
+  padding-top:0px;
+  font-size:20px;
+  color: darkslategrey;
+
+}
