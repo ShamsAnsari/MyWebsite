@@ -1,3 +1,70 @@
+html{
+  --font-title: 2rem;
+    --font-subtitle: 1.35rem;
+    --font-text: 1.25rem;
+    --color-background: #fcfcfc;
+    --color-background-code: #282c34;
+    --color-background-inline-code: #383e49;
+    --color-text-important: #333;
+    --color-text: #4D4D4D;
+    --color-text-extra: #747474;
+    --color-link: #005FBF
+}
+
+body, html{
+     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Inter,sans-serif;
+    background-color: var(--color-background);
+    padding: 0;
+    margin: 0;
+    color: var(--color-text)
+
+}
+p {
+    font-size: var(--font-text)
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none
+}
+
+a:active,a:focus,a:hover {
+    text-decoration: underline
+}
+
+h1,h2,h3,h4,h5,h6,th {
+    font-weight: 500
+}
+
+h1 {
+    font-size: 1.6rem
+}
+
+h2 {
+    font-size: 1.45rem
+}
+
+h3 {
+    font-size: 1.25rem
+}
+
+h4 {
+    font-size: 1.17rem
+}
+
+h5 {
+    font-size: 1.1rem
+}
+
+
+
+#portfolio{
+  width:80%;
+  margin: auto;
+  
+}
 .center{
   text-align: center;
 }
@@ -9,8 +76,19 @@
 
 .column {
   flex: 50%;
-  padding:1rem;
-  height: 10rem;
+  height: 25rem;
   margin:1rem;
   background-color:rgba(255,0,0, 0.3);
+}
+
+.project-title {
+    margin-bottom: .75rem;
+    font-size: var(--font-text);
+    font-weight: 500
+}
+
+.project-description {
+    margin: 0 auto;
+    margin-top: .25rem;
+    font-weight: 400
 }
