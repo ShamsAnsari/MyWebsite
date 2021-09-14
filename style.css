@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6,th {
 }
 
 h1 {
-    font-size: 1.6rem
+    font-size: 1.8rem
 }
 
 h2 {
@@ -69,6 +69,9 @@ h5 {
   text-align: center;
 }
 
+.full{
+  width: 100%;
+}
 .row {
   display: flex;
  /* background-color: rgba(0,255,0,0.3)*/
@@ -108,3 +111,39 @@ h5 {
     border-radius: 1rem;
     transition: all .2s ease-in-out
 }
+
+#profile .subtitle{
+  text-decoration: none;
+  font-size: 1.25rem;
+  color:var(--color-text-important);
+  margin-top: 10px;
+}
+
+#profile .picture {
+    width: 14rem;
+    height: 14rem;
+    object-fit:cover;
+    border: 5px solid #fff;
+    background-size:cover;
+    background-position:center;
+    border-radius: 50%;
+    box-shadow: 0 3.2px 7.2px rgba(0,0,0,.13),0 0 3.8px rgba(0,0,0,.11)
+}
+.title {
+    font-size: var(--font-title);
+    color: var(--color-text-important);
+    font-weight: 700;
+    margin-bottom:0;
+}
+
+#summary {
+    font-size: var(--font-text);
+    max-width: 25rem;
+    /* background-color:rgba(0,255,0,0.3); */
+    margin:auto;
+    margin-top:1.25rem;
+    margin-top:1.25rem;
+
+    
+}
+
