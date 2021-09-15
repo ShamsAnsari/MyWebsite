@@ -27,7 +27,7 @@
     height: auto;
     object-fit: cover;
     border-radius: 1rem;
-    transition: all 5s linear
+    transition: all 5s ease-in-out
 }
 
 .demo-image:hover { transform: scale(10)}
