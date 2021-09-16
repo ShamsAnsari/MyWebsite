@@ -16,18 +16,31 @@
     margin: 0 auto;
     /*background-color: rgba(0,0,255,0.3); */
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: 2rem;
+    margin-bottom:5rem;
 }
     
 .demo-image {
     margin: auto;
     display: block;
-    max-height: 50rem ;
-    width: 100%;
-    height: auto;
+    height:100%;
+    width: 85%;
     object-fit: cover;
-    border-radius: 1rem;
-    transition: all 5s ease-in-out
+    border-radius: 2rem;
+    image-resolution: 10000dpi;
+    transition: all 7s ease-in-out
 }
 
-.demo-image:hover { transform: scale(10)}
+.demo-image:hover { transform: scale(14)}
+
+#commands{
+  text-align: center;
+  line-height: 2rem;
+}
+.command{
+  font-weight: bold;
+  color:darkred;
+}
+#details{
+  text-align:center;
+}
