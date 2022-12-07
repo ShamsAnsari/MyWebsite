@@ -1,0 +1,62 @@
+.main-image{
+    max-height: 25rem;
+    height:25rem;
+    max-width: 80%;
+    margin:auto;
+    
+  }
+  
+  #description{
+    text-align:center;
+  }
+  
+  
+  .image-container {
+      width: 95%;
+      margin: 0 auto;
+      /*background-color: rgba(0,0,255,0.3); */
+      overflow: hidden;
+      border-radius: 2rem;
+      margin-bottom:5rem;
+  }
+      
+  .demo-image {
+      margin: auto;
+      display: block;
+      height:100%;
+      width: 85%;
+      object-fit: cover;
+      border-radius: 2rem;
+      image-resolution: 10000dpi;
+      transition: all 7s ease-in-out
+  }
+  
+  .demo-image:hover { transform: scale(14)}
+  
+  #commands{
+    text-align: center;
+    line-height: 2rem;
+  }
+  .command{
+    font-weight: bold;
+    color:darkred;
+  }
+  #details{
+    text-align:center;
+  }
+
+  .demo-image-2 {
+    margin: auto;
+    display: block;
+    height:75%;
+    width: 75%;
+    object-fit: cover;
+    border-radius: 2rem;
+    image-resolution: 10000dpi;
+    transition: all 7s ease-in-out
+  }
+  #video-player{
+    width: 560;
+    height: 315;
+  }
+ 
