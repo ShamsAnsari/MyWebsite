@@ -17,25 +17,37 @@
 .centered-image {
     display: block;
     max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: 40rem;
+    max-height: auto;
+    width: 40rem;
+    height: auto;
     margin: 0 auto;
     border-radius: 5%;
 }
+.verticle-image {
+    display: block;
+    max-width: 80%;
+    max-height: auto;
+    width: 20rem;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
 .curr_score_graph {
     display: block;
-    width: auto;
-    height: 27rem;
+    max-width: 100%;
+    width: 75rem;
+    height: auto;
     margin: 0 auto;
     border-radius: 5%;
 }
 .var_3_image {
+
     display: block;
     max-width: 100%;
     max-height: 100%;
-    width: auto;
-    height: 30rem;
+    width: 40rem;
+    height: auto;
     margin: 0 auto;
     border-radius: 5%;
 }
