@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="Shams Ansari">
+    <meta name="description" content="FX Trading Algorithm website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/fx_style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 style="text-align:center; color: var(--color-text); font-weight:bold; letter-spacing: 1px;">FX Trading Algorithm
+    </h1>
+    <section id="description" style="color: black; font-style: italic">
+        <p style="font-size: x-large;"> One thing about the Macro Markets is that there is so much noise. And a fundamental problem is how you
+            reduce that noise. So, Macro Strategists have created many filters to find the signals among the sea of
+            noise. This FX Filter is one of them. Portfolio Manager's can take a look at this filter and make judgements on what to buy or sell.
+            But where there is judgement, there is noise, and more of it than you think. Systematically structuring judgement processes can 
+            dramatically reduce noise and improve decision quality.
+            With the help of others I have taken this filter and turned it into a systematic trading
+            algorithm in hopes to find alpha. </p>
+    </section>
+
+   <!-- Scoring -->
+    <h2 style="text-align:center; color: var(--color-text); font-style:bold; letter-spacing: 1px;">
+        Currency Scoring
+    </h2>
+    <section id="description">
+        <p> Currency pairs are scored based on 3 variables (<span class="highlight-green">var_1</span>, <span class="highlight-cyan">var_2</span>, <span class="highlight-magenta">var_3</span>). 
+            These variables, signals, indicators, components, whatever you want to call them, change with time and are assinged a score of their own.
+            The final <span class="highlight-yellow">score</span> for each currency pair is a composite of these three variables
+        </p>
+    </section>
+    <figure class="image-container">
+        <img class="centered-image" src="../images/Finance/fx_filter_dash.png">
+    </figure>
+
+    <h3 style="text-align:center; color: var(--color-text); font-weight:bold; letter-spacing: 1px;">
+        Currency Scoring as a Cross-Matrix
+    </h3>
+    <section id="description">
+        <p> Here is <span class="highlight-magenta">var_3</span> 
+            as a Cross-Matrix between currency pairs. I get the data for each currency 
+            then construct the crosses between the currency to create a currency pair 
+            score. I do this for each variable. </p>
+        <p>This animation is over a 2 year period. </p>
+    </section>
+    <figure class="image-container">
+        <img class="var_3_image" src="../images/Finance/var_3_anim.gif" loop>
+    </figure>
+    <h2 style="text-align:center; color: var(--color-text); font-weight:bold; letter-spacing: 1px;">
+        Finding Signals
+    </h2>
+    <section id="description">
+        <p> I took the <span class="highlight-yellow">score</span> for a couple currency pairs and plotted them over time.
+        We can then apply some arbitrary threshold. With a threshold as a filter we can start to devise strategies.
+        For example. If the score for a currency pair is above 200, long the pair and hold it till it drops below 200. 
+        If the score is below -200, short the pair until it goes back above -200.  </p>
+        <p>Click the image to see the threshold</p>
+    </section>
+    <figure class="image-container">
+        <img class="curr_score_graph" id="curr_score_graph" onclick="changeImage1()" src="../images/Finance/curr_score.png">
+    </figure>
+    <h3 style="text-align:center; color: var(--color-text); font-weight:bold; letter-spacing: 1px;">
+        Finding Signals in CADMXN
+    </h3>
+    <section id="description">
+        <p> Here is a more specific example. Look how, the score tracks the currency-pair price very well </p>
+    </section>
+    <figure class="image-container">
+        <img class="curr_score_graph" src="../images/Finance/cadmxn_example.png">
+    </figure>
+    <section id="description">
+        <p>Long above the higher dotted red line. Short below the lower dotted red line</p>
+    </section>
+    <figure class="image-container">
+        <img class="curr_score_graph" src="../images/Finance/cadmxn_animation.gif">
+    </figure>
+    <h2 style="text-align:center; color: var(--color-text); font-weight:bold; letter-spacing: 1px;">
+        Backtesting Strategies
+    </h2>
+    <section id="description">
+        <p>I backtested the trading algorithm on two strategies. Over a 10 year period, with a couple different currency pairs</p>
+        <p><b>Classic Strategy</b>: Long and hold when score is above a threshold. Short and hold when score is below a threshold <br>
+        <b>Mean Inversion Strategy</b>: Short and hold when score is above a threshold. Long and hold when score is below a threshold</p>
+    </section>
+    <h3 style="text-align:center; color: var(--color-text); font-weight:bold; letter-spacing: 1px;">
+        Score Threshold vs Strategies. Averaging Sharpe Ratios</h3>
+    <figure class="image-container">
+        <img class="centered-image" src="../images/Finance/strat_sharp_ratio.png">
+    </figure>
+    
+    <h3 style="text-align:center; color: var(--color-text); font-weight:bold; letter-spacing: 1px;">
+        Sharpe Ratios and Avg. Yearly Returns</h3>
+    <section id="description">
+        <p>Here is a look at the Sharpe Ratios and Avg for the Mean Reversion Strategy. 
+            You can see that this strategy produces very high alphas for certain currency pairs given specific score thresholds. 
+            A Sharpe Ratio of 1 for those pairs is also very good. Whether this signal holds up in the future is to be seen...</p>
+        <p>Click on the image to switch between Sharpe Ratio and Avg. Yearly Returns </p>
+    </section>
+    <figure class="image-container">
+        <img class="sharpe_and_ret" id="sharpe_and_ret" onclick="changeImage2()" src="../images/Finance/sharpe_ratio.png">
+
+    </figure>
+
+
+
+
+
+
+
+
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
