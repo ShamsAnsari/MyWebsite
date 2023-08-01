@@ -1,5 +1,26 @@
-
-
+html{
+    --font-title: 2rem;
+      --font-subtitle: 1.35rem;
+      --font-text: 1.25rem;
+      --color-background: #fcfcfc;
+      --color-background-code: Black;
+      --color-background-inline-code: Black;
+      --color-text-important: Black;
+      --color-text: black;
+      --color-text-extra: Black;
+      --color-link: #005FBF
+  }
+  
+  body, html{
+       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: "Avenir Next", Inter;
+      background-color: var(--color-background);
+      padding: 0;
+      margin: 0;
+      color: var(--color-text)
+  
+  }
 #description{
     width: 80%;
     text-align: center;
@@ -18,7 +39,7 @@
     display: block;
     max-width: 100%;
     max-height: auto;
-    width: 40rem;
+    width: 30rem;
     height: auto;
     margin: 0 auto;
     border-radius: 5%;
@@ -46,7 +67,7 @@
     display: block;
     max-width: 100%;
     max-height: 100%;
-    width: 40rem;
+    width: 35rem;
     height: auto;
     margin: 0 auto;
     border-radius: 5%;
