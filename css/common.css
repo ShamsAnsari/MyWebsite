@@ -77,3 +77,9 @@ h5 {
 .full{
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    .column {
+      height: 20rem; /* Adjust the height to your desired value for mobile screens */
+    }
+}
