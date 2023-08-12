@@ -65,7 +65,7 @@ h5 {
 
 .column {
   flex: 50%;
-  height: 31rem;
+  height: 28rem;
   margin:1rem;
   /*background-color:rgba(255,0,0, 0.3);*/
 }
@@ -79,7 +79,16 @@ h5 {
 }
 
 @media screen and (max-width: 768px) {
-    .column {
-      height: 26rem; /* Adjust the height to your desired value for mobile screens */
-    }
+  .column {
+
+    height: 25rem;
+    margin:1rem;
+    /*background-color:rgba(255,0,0, 0.3);*/
+  }
+  
+    p {
+      font-size: 0.75rem
+  }
+  
+    
 }
